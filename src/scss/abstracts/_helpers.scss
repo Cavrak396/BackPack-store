@@ -1,0 +1,29 @@
+body {
+  background-color: $black;
+}
+span {
+  display: inline-block;
+}
+input {
+  display: block;
+}
+button {
+  background: none;
+  border: none;
+}
+.logo {
+  color: $white;
+}
+.wrap {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.wrap--primary {
+  max-width: 1847px;
+}
+.main {
+  position: relative;
+  z-index: 1;
+  top: -120px;
+  left: 0;
+}

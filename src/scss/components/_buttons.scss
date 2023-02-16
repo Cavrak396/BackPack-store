@@ -1,0 +1,9 @@
+.button {
+  font-family: $secondary__font;
+  display: inline-block;
+  &:hover {
+    background-color: $white;
+    color: $black;
+    transition: $normal;
+  }
+}

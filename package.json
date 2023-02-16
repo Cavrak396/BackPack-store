@@ -1,0 +1,27 @@
+{
+  "name": "backpack-store",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cavrak396/BackPack-store.git"
+  },
+  "author": "Cavrak",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-sass-lint": "^1.4.0",
+    "gulp-consolidate": "^0.1.2",
+    "gulp-iconfont": "^5.0.1",
+    "underscore": "^1.8.3"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cavrak396/BackPack-store/issues"
+  },
+  "homepage": "https://github.com/Cavrak396/BackPack-store#readme"
+}

@@ -1,0 +1,17 @@
+body {
+  font-family: $main_font;
+}
+h1 {
+  font-size: 79px;
+}
+
+@include tablet {
+  h1 {
+    font-size: 60px;
+  }
+}
+@include phone {
+  h1 {
+    font-size: 45px;
+  }
+}

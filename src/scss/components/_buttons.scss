@@ -1,6 +1,9 @@
 .button {
   font-family: $secondary__font;
   display: inline-block;
+  text-decoration: none;
+  color: $white;
+  border: $white solid 2px;
   &:hover {
     background-color: $white;
     color: $black;
@@ -9,13 +12,15 @@
 }
 .banner__button,
 .arrivals__button {
-  text-decoration: none;
-  border: $white solid 2px;
   padding: 13px 41px;
   font-size: 24px;
   text-transform: uppercase;
-  color: $white;
 }
 .banner__button {
   margin-bottom: 110px;
+}
+.sale__article-button {
+  display: none;
+  padding: 13px 51px;
+  margin-top: 15px;
 }

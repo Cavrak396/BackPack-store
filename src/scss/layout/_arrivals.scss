@@ -71,8 +71,8 @@
   }
 }
 @include phone {
-.arrivals__text-holder,
-.arrivals__image-holder {
-  min-height: 400px;
-}
+  .arrivals__text-holder,
+  .arrivals__image-holder {
+    min-height: 400px;
+  }
 }

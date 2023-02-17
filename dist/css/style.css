@@ -21,6 +21,9 @@ button {
 .wrap--primary {
   max-width: 1847px; }
 
+.wrap--secondary {
+  max-width: 987px; }
+
 .main {
   position: relative;
   z-index: 1;
@@ -94,6 +97,13 @@ h1 {
 h2 {
   font-size: 54px;
   letter-spacing: 5.6px; }
+
+.underheader {
+  color: white;
+  font-family: "Roboto Slab";
+  text-transform: uppercase;
+  font-size: 24px;
+  letter-spacing: 1.4px; }
 
 @media screen and (max-width: 1200px) {
   h1 {
@@ -228,7 +238,10 @@ Glyphs list
 
 .button {
   font-family: "Roboto Slab";
-  display: inline-block; }
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: white solid 2px; }
   .button:hover {
     background-color: white;
     color: black;
@@ -236,15 +249,17 @@ Glyphs list
 
 .banner__button,
 .arrivals__button {
-  text-decoration: none;
-  border: white solid 2px;
   padding: 13px 41px;
   font-size: 24px;
-  text-transform: uppercase;
-  color: white; }
+  text-transform: uppercase; }
 
 .banner__button {
   margin-bottom: 110px; }
+
+.sale__article-button {
+  display: none;
+  padding: 13px 51px;
+  margin-top: 15px; }
 
 .header__navigation-link--drop {
   display: flex;
@@ -546,3 +561,58 @@ Glyphs list
   .arrivals__text-holder,
   .arrivals__image-holder {
     min-height: 400px; } }
+
+.sale__text {
+  text-align: center;
+  padding-top: 111px;
+  margin-bottom: 53px; }
+
+.sale__header {
+  margin-bottom: 25px; }
+
+.sale__articles {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px; }
+
+.sale__article {
+  display: block;
+  margin: 0 10px;
+  max-width: calc(33.33% - 20px);
+  flex: 1 1 calc(33.33% - 20px);
+  text-align: center; }
+  .sale__article:hover .sale__article-text {
+    display: none; }
+  .sale__article:hover .sale__article-button {
+    display: inline-block; }
+
+.sale__article-image {
+  max-width: 306px;
+  max-height: 341px;
+  margin-bottom: 25px; }
+
+.sale__article-header {
+  font-size: 27px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.1px;
+  margin-bottom: 28px; }
+
+.sale__article-prices {
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center; }
+
+.sale__article-price:first-child {
+  margin: 0 16px 0 12px;
+  text-decoration-line: line-through; }
+
+@media screen and (max-width: 975px) {
+  .sale__article {
+    max-width: 100%;
+    flex: 1 1 100%;
+    margin-bottom: 20px; }
+  .sale__article-image {
+    max-height: 307px;
+    margin-bottom: 8px; } }

@@ -7,3 +7,15 @@
     transition: $normal;
   }
 }
+.banner__button,
+.arrivals__button {
+  text-decoration: none;
+  border: $white solid 2px;
+  padding: 13px 41px;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: $white;
+}
+.banner__button {
+  margin-bottom: 110px;
+}

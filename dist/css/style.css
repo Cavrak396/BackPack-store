@@ -80,8 +80,20 @@ table {
 body {
   font-family: "Oswald"; }
 
+a {
+  text-decoration: none; }
+
+h1,
+h2 {
+  color: white;
+  text-transform: uppercase; }
+
 h1 {
   font-size: 79px; }
+
+h2 {
+  font-size: 54px;
+  letter-spacing: 5.6px; }
 
 @media screen and (max-width: 1200px) {
   h1 {
@@ -221,6 +233,18 @@ Glyphs list
     background-color: white;
     color: black;
     transition: 0.7s all ease-in-out; }
+
+.banner__button,
+.arrivals__button {
+  text-decoration: none;
+  border: white solid 2px;
+  padding: 13px 41px;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: white; }
+
+.banner__button {
+  margin-bottom: 110px; }
 
 .header__navigation-link--drop {
   display: flex;
@@ -416,20 +440,8 @@ Glyphs list
   margin: 0 auto;
   padding: 379px 0 173px 0; }
 
-.banner__header,
-.banner__button {
-  text-transform: uppercase;
-  color: white; }
-
 .banner__header {
   margin-bottom: 28px; }
-
-.banner__button {
-  text-decoration: none;
-  border: white solid 2px;
-  padding: 13px 41px;
-  font-size: 24px;
-  margin-bottom: 110px; }
 
 .banner__arrows {
   display: block; }
@@ -453,3 +465,84 @@ Glyphs list
     margin-bottom: 0; }
   .banner__arrows {
     display: none; } }
+
+.arrivals__line,
+.arrivals__backpacks-line {
+  display: flex; }
+
+.arrivals__text-holder,
+.arrivals__image-holder {
+  position: relative;
+  max-width: 50%;
+  flex: 1 1 50%;
+  min-height: 722px;
+  background-color: black; }
+
+.arrivals__image-holder {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.arrivals__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
+
+.arrivals__header {
+  margin-bottom: 15px; }
+
+.arrivals__backpack {
+  position: relative;
+  max-width: 33.33%;
+  flex: 1 1 33.33%;
+  display: block;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .arrivals__backpack:hover {
+    background-size: 106% 106%; }
+    .arrivals__backpack:hover .arrivals__backpack-header {
+      visibility: visible; }
+    .arrivals__backpack:hover::after {
+      position: absolute;
+      content: "";
+      z-index: 1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      opacity: 0.7; }
+
+.arrivals__backpack-header {
+  position: relative;
+  z-index: 10;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Roboto Slab";
+  padding: 305px 0;
+  font-size: 24px;
+  visibility: hidden; }
+
+@media screen and (max-width: 1200px) {
+  .arrivals__line {
+    flex-direction: column; }
+  .arrivals__text-holder,
+  .arrivals__image-holder {
+    max-width: 100%;
+    flex: 1 1 100%; } }
+
+@media screen and (max-width: 975px) {
+  .arrivals__backpacks-line {
+    flex-direction: column; }
+  .arrivals__backpack {
+    max-width: 100%;
+    flex: 1 1 100%; } }
+
+@media screen and (max-width: 767px) {
+  .arrivals__text-holder,
+  .arrivals__image-holder {
+    min-height: 400px; } }

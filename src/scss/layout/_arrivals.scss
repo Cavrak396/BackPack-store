@@ -1,0 +1,78 @@
+.arrivals__line,
+.arrivals__backpacks-line {
+  display: flex;
+}
+.arrivals__text-holder,
+.arrivals__image-holder {
+  position: relative;
+  max-width: 50%;
+  flex: 1 1 50%;
+  min-height: 722px;
+  background-color: $black;
+}
+.arrivals__image-holder {
+  @include background;
+}
+.arrivals__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.arrivals__header {
+  margin-bottom: 15px;
+}
+.arrivals__backpack {
+  position: relative;
+  max-width: 33.33%;
+  flex: 1 1 33.33%;
+  display: block;
+  text-align: center;
+  @include background;
+  &:hover {
+    background-size: 106% 106%;
+    .arrivals__backpack-header {
+      visibility: visible;
+    }
+    &::after {
+      @include darker;
+      opacity: 0.7;
+    }
+  }
+}
+.arrivals__backpack-header {
+  position: relative;
+  z-index: 10;
+  color: $white;
+  text-transform: uppercase;
+  font-family: $secondary__font;
+  padding: 305px 0;
+  font-size: 24px;
+  visibility: hidden;
+}
+@include tablet {
+  .arrivals__line {
+    flex-direction: column;
+  }
+  .arrivals__text-holder,
+  .arrivals__image-holder {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+}
+@include small_tablet {
+  .arrivals__backpacks-line {
+    flex-direction: column;
+  }
+  .arrivals__backpack {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+}
+@include phone {
+.arrivals__text-holder,
+.arrivals__image-holder {
+  min-height: 400px;
+}
+}

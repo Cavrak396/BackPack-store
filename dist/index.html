@@ -47,13 +47,13 @@
                             </ul>
                         </li>
                         <li class="header__navigation-item">
-                            <a href="#" class="header__navigation-link">About</a>
+                            <a href=".about" class="header__navigation-link">About</a>
                         </li>
                         <li class="header__navigation-item">
                             <a href="#" class="header__navigation-link">Forum</a>
                         </li>
                         <li class="header__navigation-item">
-                            <a href="#" class="header__navigation-link">Contact</a>
+                            <a href=".contact" class="header__navigation-link">Contact</a>
                         </li>
                         <li class="header__navigation-item header__navigation-item--search">
                             <input type="text" class="header__navigation-search" placeholder="Search...">
@@ -156,7 +156,98 @@
                 </div>
             </div>
         </section>
+        <section class="about" style="background-image: url(images/BackPack-about-bg.webp);">
+
+            <div class="about__line">
+                <div class="about__text-side">
+                    <div class="about__text-inner">
+                        <h2 class="about__header">About us</h2>
+                        <p class="about__text">
+                            I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit
+                            Text”
+                            or double click me to add your own content and make changes to the font. I’m a great place
+                            for
+                            you to tell a story and let your users know a little more about you.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="wrap wrap--secondary">
+                <div class="contact__line">
+                    <div class="contact__data">
+                        <form class="contact__datas">
+                            <div class="contact__datas-row">
+                                <div class="contact__datas-holder">
+                                    <label class="contact__label" for="name">First Name* </label>
+                                    <input type="text" class="contact__input" id="name" name="name">
+                                </div>
+                                <div class="contact__datas-holder">
+                                    <label class="contact__label" for="last-name">Last Name* </label>
+                                    <input type="text" class="contact__input" id="last-name" name="last-name">
+                                </div>
+                            </div>
+                            <label class="contact__label" for="email">Enter Your Email* </label>
+                            <input type="text" class="contact__input" id="email" name="email">
+                            <label class="contact__label" for="subject">Enter Your Subject</label>
+                            <input type="text" class="contact__input" id="subject" name="subject">
+                            <label class="contact__label" for="message">Enter Your Message</label>
+                            <input type="text" class="contact__input contact__input--sizer" id="message" name="message">
+                            <button type="submit" class="contact__button">Send</button>
+                        </form>
+                    </div>
+                    <div class="contact__us">
+                        <div class="contact__us-text">
+                            <h2 class="contact__header">Contact</h2>
+                            <p class="contact__text">I'm a paragraph. Click here to add your own text and edit me. I’m a
+                                great place for you to tell a story and let your users know a little more about you.</p>
+                            <a href="mailto:webmaster@example.com" class="contact__link">info@my-domain.com</a>
+                            <a href="tel:+4733378901" class="contact__link">Tel: 1-800-000-0000</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact__subscribe">
+                <div class="wrap wrap--secondary">
+                    <div class="contact__subscribe-text">
+                        <h2 class="contact__subscribe-header">Join our mailing list</h2>
+                        <span class="contact__underheader underheader">And never miss an update</span>
+                        <form class="contact__subscribe-form">
+                            <label class="contact__label" for="contact-email">Enter your email here* </label>
+                            <input type="text" class="contact__input contact__input--modificate" id="contact-email"
+                                name="email" placeholder="Email">
+                            <button type="submit" class="contact__subscribe-button">Subscribe now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer class="footer">
+        <div class="wrap wrap--secondary">
+            <div class="footer__line">
+                <p class="footer__text">© 2035 by NORTHPOLE. Powered and secured by <a class="footer__copyright"
+                        href="#">Wix</a></p>
+                <nav class="footer__navigation">
+                    <ul class="footer__navigation-list">
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__navigation-link">FAQ</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__navigation-link">FORUM</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__navigation-link">Shipping & Returns</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__navigation-link">Terms & Conditions</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
     <script src="js/script.js"></script>
 </body>
 

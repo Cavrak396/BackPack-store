@@ -1,3 +1,6 @@
+.sale {
+  padding-bottom: 69px;
+}
 .sale__text {
   text-align: center;
   padding-top: 111px;
@@ -17,6 +20,7 @@
   max-width: calc(33.33% - 20px);
   flex: 1 1 calc(33.33% - 20px);
   text-align: center;
+  min-height: 490px;
   &:hover {
     .sale__article-text {
       display: none;

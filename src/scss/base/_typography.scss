@@ -22,14 +22,30 @@ h2 {
   text-transform: uppercase;
   font-size: 24px;
   letter-spacing: 1.4px;
+  line-height: 24px;
+}
+p {
+  font-size: 21px;
+  letter-spacing: 1px;
+  line-height: 31px;
+  color: $white;
 }
 @include tablet {
   h1 {
     font-size: 60px;
   }
 }
-@include phone {
+@include small_tablet {
   h1 {
     font-size: 45px;
+  }
+  p {
+    font-size: 18px;
+  }
+  h2 {
+    font-size: 48px;
+  }
+  .underheader {
+    font-size: 21px;
   }
 }

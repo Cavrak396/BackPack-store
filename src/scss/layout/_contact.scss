@@ -1,0 +1,103 @@
+.contact__line {
+  display: flex;
+  padding: 122px 0 65px 0;
+}
+.contact__datas {
+  padding: 4px 72px 0 1px;
+}
+.contact__data,
+.contact__us {
+  max-width: 50%;
+  flex: 1 1 50%;
+}
+.contact__us {
+  padding-left: 69px;
+}
+.contact__datas-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+.contact__datas-holder {
+  margin: 0 10px;
+  max-width: calc(50% - 20px);
+  flex: 1 1 calc(50% - 20px);
+}
+.contact__label {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 21px;
+  color: $white;
+}
+.contact__input {
+  padding: 17px 10px;
+  margin-bottom: 8px;
+  width: 100%;
+  background: none;
+  border: $white solid 1px;
+  color: $white;
+}
+.contact__input--sizer {
+  padding: 55px 0;
+}
+.contact__header {
+  margin-bottom: 18px;
+}
+.contact__text {
+  margin-bottom: 34px;
+}
+.contact__link {
+  display: block;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  color: $white;
+  margin-bottom: 13px;
+  &:hover {
+    opacity: 0.7;
+    transition: $normal;
+  }
+}
+.contact__subscribe {
+  background-color: $browned_black;
+}
+.contact__subscribe-text {
+  text-align: center;
+  padding: 111px 6px 103px 0;
+  margin: 0 auto;
+  max-width: 667px;
+}
+.contact__subscribe-header {
+  margin-bottom: 23px;
+}
+.contact__underheader {
+  margin-bottom: 48px;
+}
+.contact__input--modificate {
+  text-align: center;
+  padding: 14px 10px 18px 10px;
+  margin-bottom: 9px;
+}
+@include small_tablet {
+  .contact__data,
+  .contact__us {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+  .contact__us {
+    padding: 0;
+  }
+  .contact__line {
+    flex-direction: column-reverse;
+  }
+  .contact__datas {
+    padding: 20px 0 0 0;
+  }
+  .contact__datas-holder {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+  .contact__button {
+    width: 100%;
+    float: none;
+  }
+}

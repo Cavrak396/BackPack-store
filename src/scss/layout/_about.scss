@@ -1,0 +1,44 @@
+.about {
+  @include background;
+}
+.about__line {
+  display: flex;
+}
+.about__text-side {
+  position: relative;
+  max-width: 50%;
+  flex: 1 1 50%;
+  color: $white;
+}
+.about__text-side {
+  &::after {
+    @include darker;
+    opacity: 0.5;
+  }
+}
+.about__text-inner {
+  position: relative;
+  z-index: 10;
+  padding: 197px 20px 184px 20px;
+  @include perfect_sider;
+}
+.about__header {
+  margin-bottom: 17px;
+}
+.about__text {
+  max-width: 393px;
+}
+@include small_tablet {
+  .about__text-side {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+  .about__text-inner {
+    margin: 0 auto;
+  }
+}
+@include phone {
+  .about__text-inner {
+    padding: 90px 20px 90px 20px;
+  }
+}

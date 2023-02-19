@@ -26,3 +26,18 @@ const arrivalsSection = document.querySelector(".arrivals");
 bannerArrows.addEventListener("click", () => {
   arrivalsSection.scrollIntoView({ behavior: "smooth" });
 });
+
+//Scroller to sections
+
+const navLinks = document.querySelectorAll(".header__navigation-link");
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", (element) => {
+    element.preventDefault();
+
+    let targetPath = link.getAttribute("href");
+    let targetSection = document.querySelector(targetPath);
+
+    targetSection.scrollIntoView({ behavior: "smooth" });
+  });
+});

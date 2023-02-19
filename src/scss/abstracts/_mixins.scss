@@ -13,7 +13,6 @@
     @content;
   }
 }
-
 @mixin background {
   background-position: center;
   background-repeat: no-repeat;
@@ -28,4 +27,8 @@
   width: 100%;
   height: 100%;
   background-color: $black;
+}
+@mixin perfect_sider {
+  margin-left: auto;
+  max-width:490px;
 }

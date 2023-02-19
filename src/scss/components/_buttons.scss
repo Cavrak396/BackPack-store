@@ -24,3 +24,27 @@
   padding: 13px 51px;
   margin-top: 15px;
 }
+.contact__button,
+.contact__subscribe-button {
+  color: $white;
+  font-family: $main_font;
+  font-size: 19px;
+  border: $white solid 2px;
+  margin: 3px 4px 0 0;
+  &:hover {
+    cursor: pointer;
+    background-color: $white;
+    color: $black;
+    transition: $normal;
+  }
+}
+.contact__subscribe-button {
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 9px 0;
+}
+.contact__button {
+  float: right;
+  padding: 4px 57px 7px 57px;
+}

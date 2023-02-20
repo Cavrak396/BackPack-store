@@ -65,3 +65,11 @@
     margin-bottom: 8px;
   }
 }
+@include phone {
+  .sale__article {
+    min-height: 397px;
+  }
+  .sale__article-image {
+    max-width: 220px;
+  }
+}

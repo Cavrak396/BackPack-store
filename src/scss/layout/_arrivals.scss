@@ -68,6 +68,12 @@
   .arrivals__backpack {
     max-width: 100%;
     flex: 1 1 100%;
+    &:hover {
+      background-size: 115%;
+    }
+  }
+  .arrivals__backpack-header{
+    padding: 190px 0;
   }
 }
 @include phone {

@@ -12,10 +12,16 @@ button.addEventListener("click", () => {
 
 const hamburger = document.querySelector(".header__hamburger");
 const navigation = document.querySelector(".header__navigation");
+const navigationLink = document.querySelectorAll(".header__navigation-link");
 
 hamburger.addEventListener("click", () => {
   let active = "active";
   navigation.classList.toggle(active);
+})
+navigationLink.forEach((link) => {
+  link.addEventListener("click", () => {
+    navigation.classList.remove("active");
+  });
 });
 
 //Scroller to content

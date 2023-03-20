@@ -30,6 +30,11 @@
     transform: translateY(-7px) translateX(-6px) rotate(141deg);
   }
 }
+@include tablet {
+  .banner__header {
+    line-height: 53px;
+  }
+}
 @include phone {
   .banner__content {
     padding: 219px 0 124px 0;

@@ -12,12 +12,20 @@ button.addEventListener("click", () => {
 
 const hamburger = document.querySelector(".js-hamburger");
 const navigation = document.querySelector(".js-nav");
+const body = document.querySelector("body");
 const active = "active";
 
 hamburger.addEventListener("click", () => {
   navigation.classList.toggle(active);
   hamburger.classList.toggle(active);
+
+  if (navigation.classList.contains(active)) {
+    body.style.overflow = "hidden";
+  } else {
+    body.style.overflow = "";
+  }
 });
+
 
 //Scroller to content
 

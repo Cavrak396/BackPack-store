@@ -452,6 +452,7 @@ Glyphs list
   .header__navigation {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.7);
+    transition: 0.7s all ease-in-out;
     z-index: 15;
     flex-direction: column;
     width: 100%;
@@ -473,6 +474,19 @@ Glyphs list
   .header__navigation-list--modificate,
   .header__navigation-item--search {
     display: none; } }
+
+.active .header__hamburger-bar:nth-child(2) {
+  opacity: 0; }
+
+.active .header__hamburger-bar:nth-child(3) {
+  transform: translateY(-7px) translateX(-5px) rotate(-45deg);
+  transition: 0.7s all ease-in-out;
+  width: 20px; }
+
+.active .header__hamburger-bar:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+  transition: 0.7s all ease-in-out;
+  width: 20px; }
 
 .active {
   left: 0; }
@@ -554,14 +568,18 @@ Glyphs list
   flex: 1 1 33.33%;
   display: block;
   text-align: center;
+  overflow: hidden; }
+
+.arrivals__backpack-inner {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
-  .arrivals__backpack:hover {
-    background-size: 106% 106%; }
-    .arrivals__backpack:hover .arrivals__backpack-header {
+  .arrivals__backpack-inner:hover {
+    transform: scale(1.05);
+    transition: 0.7s all ease-in-out; }
+    .arrivals__backpack-inner:hover .arrivals__backpack-header {
       visibility: visible; }
-    .arrivals__backpack:hover::after {
+    .arrivals__backpack-inner:hover::after {
       position: absolute;
       content: "";
       z-index: 1;

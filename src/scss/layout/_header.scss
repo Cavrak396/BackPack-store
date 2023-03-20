@@ -110,6 +110,7 @@
   .header__navigation {
     position: absolute;
     background-color: $windowed_black;
+    transition: $normal;
     z-index: 15;
     flex-direction: column;
     width: 100%;
@@ -135,6 +136,23 @@
   .header__navigation-list--modificate,
   .header__navigation-item--search {
     display: none;
+  }
+}
+.active {
+  .header__hamburger-bar {
+    &:nth-child(2) {
+      opacity: 0;
+    }
+    &:nth-child(3) {
+      transform: translateY(-7px) translateX(-5px)rotate(-45deg);
+      transition: $normal;
+      width: 20px;
+    }
+    &:nth-child(1) {
+      transform: translateY(9px) rotate(45deg);
+      transition: $normal;
+      width: 20px;
+    }
   }
 }
 .active {

@@ -29,9 +29,13 @@
   flex: 1 1 33.33%;
   display: block;
   text-align: center;
+  overflow: hidden;
+}
+.arrivals__backpack-inner {
   @include background;
   &:hover {
-    background-size: 106% 106%;
+    transform: scale(1.05);
+    transition: $normal;
     .arrivals__backpack-header {
       visibility: visible;
     }
@@ -72,7 +76,7 @@
       background-size: 115%;
     }
   }
-  .arrivals__backpack-header{
+  .arrivals__backpack-header {
     padding: 190px 0;
   }
 }

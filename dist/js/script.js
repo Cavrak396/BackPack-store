@@ -13,10 +13,11 @@ button.addEventListener("click", () => {
 const hamburger = document.querySelector(".header__hamburger");
 const navigation = document.querySelector(".header__navigation");
 const navigationLink = document.querySelectorAll(".header__navigation-link");
+const active = "active";
 
 hamburger.addEventListener("click", () => {
-  let active = "active";
   navigation.classList.toggle(active);
+  hamburger.classList.toggle(active);
 })
 
 

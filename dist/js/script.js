@@ -18,11 +18,7 @@ hamburger.addEventListener("click", () => {
   let active = "active";
   navigation.classList.toggle(active);
 })
-navigationLink.forEach((link) => {
-  link.addEventListener("click", () => {
-    navigation.classList.remove("active");
-  });
-});
+
 
 //Scroller to content
 

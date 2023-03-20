@@ -29,6 +29,7 @@ navLinks.forEach((link) => {
   link.addEventListener("click", (event) => {
     if (navigation.classList.contains(active)) {
       navigation.classList.remove(active);
+      hamburger.classList.remove(active);
       body.style.overflow = "auto";
     }
     event.preventDefault();

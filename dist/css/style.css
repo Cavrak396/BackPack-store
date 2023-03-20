@@ -812,7 +812,8 @@ Glyphs list
   max-width: 667px; }
 
 .contact__subscribe-header {
-  margin-bottom: 23px; }
+  margin-bottom: 23px;
+  color: white; }
 
 .contact__underheader {
   margin-bottom: 48px; }

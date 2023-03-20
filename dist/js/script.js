@@ -26,7 +26,6 @@ hamburger.addEventListener("click", () => {
   }
 });
 
-
 //Scroller to content
 
 const bannerArrows = document.querySelector(".js-arrows");

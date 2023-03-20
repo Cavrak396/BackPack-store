@@ -650,7 +650,9 @@ Glyphs list
   .sale__article:hover .sale__article-text {
     display: none; }
   .sale__article:hover .sale__article-button {
-    display: inline-block; }
+    display: block;
+    max-width: 210px;
+    margin: 0 auto; }
 
 .sale__article-image {
   max-width: 306px;

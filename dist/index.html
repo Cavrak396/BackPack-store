@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
     <title>The NorthPole</title>
 </head>
 
@@ -13,22 +14,22 @@
     <header class="header">
         <div class="wrap wrap--primary">
             <div class="header__line">
-                <a href="#" class="header__logo-link">
+                <a href="javascript:;" class="header__logo-link">
                     <span class="header__logo logo">
                         <span class="header__logo-word">The</span>
                         <span class="header__logo-word">NorthPole</span>
                     </span>
                 </a>
-                <nav class="header__navigation">
+                <nav class="header__navigation js-nav">
                     <ul class="header__navigation-list">
                         <li class="header__navigation-item">
-                            <a href="javacsript:;" class="header__navigation-link header__navigation-link--drop">Shop
+                            <a href="javacsript:;" class="header__navigation-link header__navigation-link--drop js-drop-link">Shop
                                 <span class="header__arrows">
                                     <span class="header__arrow"></span>
                                     <span class="header__arrow"></span>
                                 </span>
                             </a>
-                            <ul class="header__dropdown">
+                            <ul class="header__dropdown js-dropdown">
                                 <li class="header__dropdown-item">
                                     <a href="javacsript:;" class="header__dropdown-link">
                                         Backpacks
@@ -47,13 +48,13 @@
                             </ul>
                         </li>
                         <li class="header__navigation-item">
-                            <a href=".about" class="header__navigation-link">About</a>
+                            <a href=".about" class="header__navigation-link js-nav-link">About</a>
                         </li>
                         <li class="header__navigation-item">
-                            <a href="javacsript:;" class="header__navigation-link">Forum</a>
+                            <a href="javacsript:;" class="header__navigation-link js-nav-link">Forum</a>
                         </li>
                         <li class="header__navigation-item">
-                            <a href=".contact" class="header__navigation-link">Contact</a>
+                            <a href=".contact" class="header__navigation-link js-nav-link">Contact</a>
                         </li>
                         <li class="header__navigation-item header__navigation-item--search">
                             <input type="text" class="header__navigation-search" placeholder="Search...">
@@ -61,16 +62,16 @@
                     </ul>
                     <ul class="header__navigation-list header__navigation-list--modificate">
                         <li class="header__navigation-item header__navigation-item--modificate">
-                            <a href="javacsript:;" class="header__navigation-link header__navigation-link--modificate">
+                            <a href="javacsript:;" class="header__navigation-link header__navigation-link--modificate js-nav-link">
                                 Log In</a>
                         </li>
                         <li class="header__navigation-item header__navigation-item--modificate">
                             <a href="javacsript:;"
-                                class="header__navigation-link header__navigation-link--modificate">Shop</a>
+                                class="header__navigation-link header__navigation-link--modificate js-nav-link">Shop</a>
                         </li>
                     </ul>
                 </nav>
-                <button type="button" class="header__hamburger">
+                <button type="button" class="header__hamburger js-hamburger">
                     <span class="header__hamburger-bar"></span>
                     <span class="header__hamburger-bar"></span>
                     <span class="header__hamburger-bar"></span>
@@ -84,14 +85,14 @@
                 <div class="banner__content">
                     <h1 class="banner__header">Plan your adventure</h1>
                     <a href="mainshop.html" class="banner__button button">Shop now</a>
-                    <span class="banner__arrows">
+                    <span class="banner__arrows js-arrows">
                         <span class="banner__arrow"></span>
                         <span class="banner__arrow"></span>
                     </span>
                 </div>
             </div>
         </section>
-        <section class="arrivals">
+        <section class="arrivals js-arrivals">
             <div class="arrivals__line">
                 <div class="arrivals__text-holder">
                     <div class="arrivals__text">
@@ -233,7 +234,7 @@
         <div class="wrap wrap--secondary">
             <div class="footer__line">
                 <p class="footer__text">© 2035 by NORTHPOLE. Powered and secured by <a class="footer__copyright"
-                        href="#">Wix</a></p>
+                        href="javascript:;">Wix</a></p>
                 <nav class="footer__navigation">
                     <ul class="footer__navigation-list">
                         <li class="footer__list-item">
@@ -253,7 +254,6 @@
             </div>
         </div>
     </footer>
-    <script src="js/script.js"></script>
 </body>
 
 </html>
